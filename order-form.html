@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Supplies | Taxidermy Pro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+</head>
+<body data-theme="dark">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-xl fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="assets/images/logo.svg" alt="Logo" class="me-2" style="height: 35px;">
+                VESTIGE
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto text-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="home-2.html">Home 2</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="catalog.html">Catalog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                    
+                    
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                
+                <div class="d-flex flex-column flex-lg-row align-items-center gap-3 mt-4 mt-lg-0">
+                    <div class="d-flex gap-2">
+                        <button class="theme-toggle" id="theme-toggle" title="Toggle Theme">
+                            <i class="bi bi-sun"></i>
+                        </button>
+                        <button class="rtl-toggle" id="rtl-toggle" title="Toggle RTL">
+                            <i class="bi bi-arrow-left-right"></i>
+                        </button>
+                    </div>
+                    <a href="login.html" class="btn-premium">Login</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="py-5 mt-5">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="card bg-secondary-custom border-0 p-4 p-md-5 reveal" style="background-color: var(--secondary-bg);">
+                        <div class="text-center mb-5">
+                            <h2 class="display-5">Supply Inquiry & Order</h2>
+                            <p class="text-muted">Fill out the form below to request professional supplies or services.</p>
+                        </div>
+                        
+                        <form class="row g-4">
+                            <!-- Section: Personal Info -->
+                            <div class="col-12"><h4 class="text-tan border-bottom border-secondary pb-2 mb-3">1. Professional Information</h4></div>
+                            <div class="col-md-6">
+                                <label class="form-label small text-uppercase text-muted">Full Name</label>
+                                <input type="text" class="form-control bg-dark border-secondary text-white rounded-0">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label small text-uppercase text-muted">Business Name (Optional)</label>
+                                <input type="text" class="form-control bg-dark border-secondary text-white rounded-0">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label small text-uppercase text-muted">Email Address</label>
+                                <input type="email" class="form-control bg-dark border-secondary text-white rounded-0">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label small text-uppercase text-muted">Phone Number</label>
+                                <input type="tel" class="form-control bg-dark border-secondary text-white rounded-0">
+                            </div>
+
+                            <!-- Section: Order Details -->
+                            <div class="col-12 mt-5"><h4 class="text-tan border-bottom border-secondary pb-2 mb-3">2. Order Details</h4></div>
+                            <div class="col-md-6">
+                                <label class="form-label small text-uppercase text-muted">Request Type</label>
+                                <select class="form-select bg-dark border-secondary text-white rounded-0">
+                                    <option selected>Supply Order (Chemicals/Tools)</option>
+                                    <option>Tanning Service Inquiry</option>
+                                    <option>Custom Mounting Request</option>
+                                    <option>Wholesale Bulk Order</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label small text-uppercase text-muted">Priority Level</label>
+                                <select class="form-select bg-dark border-secondary text-white rounded-0">
+                                    <option selected>Standard (4-6 weeks)</option>
+                                    <option>Rush (2 weeks - Extra Fee)</option>
+                                    <option>Emergency Restoration</option>
+                                </select>
+                            </div>
+                            
+                            <!-- Items Selection (Simplified) -->
+                            <div class="col-12">
+                                <label class="form-label small text-uppercase text-muted">Items Requested / Project Description</label>
+                                <textarea class="form-control bg-dark border-secondary text-white rounded-0" rows="6" placeholder="List the product IDs or describe your project in detail..."></textarea>
+                            </div>
+
+                            <!-- Section: Shipping -->
+                            <div class="col-12 mt-5"><h4 class="text-tan border-bottom border-secondary pb-2 mb-3">3. Logistics</h4></div>
+                            <div class="col-12">
+                                <label class="form-label small text-uppercase text-muted">Shipping Address</label>
+                                <input type="text" class="form-control bg-dark border-secondary text-white rounded-0" placeholder="Street Address">
+                            </div>
+                            <div class="col-md-4">
+                                <label class="form-label">City</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col-md-4">
+                                <label class="form-label">State / Province</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col-md-4">
+                                <label class="form-label">Zip / Postal Code</label>
+                                <input type="text" class="form-control">
+                            </div>
+
+                            <div class="col-12 mt-5">
+                                <button type="submit" class="btn-premium w-100 py-3">Submit Order Inquiry</button>
+                                <p class="text-center text-muted small mt-3">Our artisans will review your request and contact you within 24-48 hours with a formal quote.</p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <div class="footer-logo"><img src="assets/images/logo.svg" alt="Logo" class="me-2" style="height: 35px;">VESTIGE</div>
+                    <p class="text-muted mb-5 small letter-spacing-1 lh-lg">Dedicated to the art of wildlife preservation and the heritage of craftsmanship since 1995. We provide the tools, chemicals, and knowledge for professional excellence.</p>
+                    <div class="social-links d-flex gap-4">
+                        <a href="#" class="text-muted hover-accent"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-muted hover-accent"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-muted hover-accent"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 footer-links">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="catalog.html">Catalog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 footer-links">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="order-form.html">Order Supplies</a></li>
+                        
+                        <li><a href="404.html">Support Center</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h4>Newsletter</h4>
+                    <p class="text-muted mb-4">Join our community of craftsmen and receive exclusive tips and offers.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email Address" required>
+                        <button type="submit" class="btn-premium w-100">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <hr class="my-5 border-secondary">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0 small text-muted">&copy; 2026 Taxidermy Pro Supply & Tanning. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <button id="back-to-top" title="Back to Top"><i class="bi bi-arrow-up"></i></button>
+</body>
+</html>

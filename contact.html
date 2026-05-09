@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Taxidermy Pro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+</head>
+<body data-theme="dark">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-xl fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="assets/images/logo.svg" alt="Logo" class="me-2" style="height: 35px;">
+                VESTIGE
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto text-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="home-2.html">Home 2</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="catalog.html">Catalog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                    
+                    
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                </ul>
+                
+                <div class="d-flex flex-column flex-lg-row align-items-center gap-3 mt-4 mt-lg-0">
+                    <div class="d-flex gap-2">
+                        <button class="theme-toggle" id="theme-toggle" title="Toggle Theme">
+                            <i class="bi bi-sun"></i>
+                        </button>
+                        <button class="rtl-toggle" id="rtl-toggle" title="Toggle RTL">
+                            <i class="bi bi-arrow-left-right"></i>
+                        </button>
+                    </div>
+                    <a href="login.html" class="btn-premium">Login</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="py-5 mt-5 bg-secondary-custom" style="background-color: var(--secondary-bg);">
+        <div class="container py-5 text-center">
+            <div class="section-title reveal">
+                <span>Get In Touch</span>
+                <h1 class="display-3">Visit Our Workshop</h1>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row g-5">
+                <!-- Contact Info -->
+                <div class="col-lg-5">
+                    <div class="reveal">
+                        <h2 class="mb-4">Consultation & Inquiries</h2>
+                        <p class="text-muted mb-5">Whether you're a professional looking for wholesale supplies or an enthusiast starting your first project, we're here to help.</p>
+                        
+                        <div class="d-flex mb-4">
+                            <div class="icon-box me-3 text-tan fs-3"><i class="bi bi-geo-alt"></i></div>
+                            <div>
+                                <h5 class="mb-1">Workshop Address</h5>
+                                <p class="text-muted">123 Heritage Lane, Mountain View, MT 59715</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-4">
+                            <div class="icon-box me-3 text-tan fs-3"><i class="bi bi-envelope"></i></div>
+                            <div>
+                                <h5 class="mb-1">Email Us</h5>
+                                <p class="text-muted">contact@taxidermypro.com</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-4">
+                            <div class="icon-box me-3 text-tan fs-3"><i class="bi bi-telephone"></i></div>
+                            <div>
+                                <h5 class="mb-1">Call Our Artisans</h5>
+                                <p class="text-muted">+1 (406) 555-0198</p>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-5">
+                            <h5 class="mb-3">Follow The Craft</h5>
+                            <div class="social-links d-flex">
+                                <a href="#" class="social-btn"><i class="bi bi-facebook"></i></a>
+                                <a href="#" class="social-btn"><i class="bi bi-instagram"></i></a>
+                                <a href="#" class="social-btn"><i class="bi bi-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="col-lg-7">
+                    <div class="card bg-secondary-custom border-0 p-4 p-md-5 reveal" style="background-color: var(--secondary-bg);">
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label class="form-label small text-uppercase text-muted">Full Name</label>
+                                    <input type="text" class="form-control" placeholder="John Doe">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label small text-uppercase text-muted">Email Address</label>
+                                    <input type="email" class="form-control" placeholder="john@example.com">
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label small text-uppercase text-muted">Subject</label>
+                                    <select class="form-select">
+                                        <option selected>Supply Inquiry</option>
+                                        <option>Tanning Service</option>
+                                        <option>Restoration Consultation</option>
+                                        <option>Wholesale Partnership</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label small text-uppercase text-muted">Message</label>
+                                    <textarea class="form-control" rows="5" placeholder="How can we assist you?"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn-premium w-100">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="p-0 mt-5">
+        <div class="google-map-wrapper reveal">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113840.45785006096!2d-114.156557!3d46.872146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x535dcc2a24564c7f%3A0xe67554972740292e!2sMissoula%2C%20MT!5e0!3m2!1sen!2sus!4v1690000000000!5m2!1sen!2sus" 
+                width="100%" 
+                height="450" 
+                style="border:0; filter: grayscale(1) invert(0.9) contrast(1.2);" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <div class="footer-logo"><img src="assets/images/logo.svg" alt="Logo" class="me-2" style="height: 35px;">VESTIGE</div>
+                    <p class="text-muted mb-5 small letter-spacing-1 lh-lg">Dedicated to the art of wildlife preservation and the heritage of craftsmanship since 1995. We provide the tools, chemicals, and knowledge for professional excellence.</p>
+                    <div class="social-links d-flex gap-4">
+                        <a href="#" class="text-muted hover-accent"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-muted hover-accent"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-muted hover-accent"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 footer-links">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="catalog.html">Catalog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 footer-links">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="order-form.html">Order Supplies</a></li>
+                        
+                        <li><a href="404.html">Support Center</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h4>Newsletter</h4>
+                    <p class="text-muted mb-4">Join our community of craftsmen and receive exclusive tips and offers.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email Address" required>
+                        <button type="submit" class="btn-premium w-100">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <hr class="my-5 border-secondary">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0 small text-muted">&copy; 2026 Taxidermy Pro Supply & Tanning. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <button id="back-to-top" title="Back to Top"><i class="bi bi-arrow-up"></i></button>
+</body>
+</html>

@@ -1,0 +1,8 @@
+/* Dark Mode Overrides (Already handled in style.css but keeping for structure) */
+[data-theme="dark"] {
+    --primary-bg: #181512;
+    --secondary-bg: #231d18;
+    --card-bg: #2f261f;
+    --text-primary: #f5f1eb;
+    --text-muted: #c5b8a8;
+}
