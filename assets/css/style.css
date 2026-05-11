@@ -218,7 +218,7 @@ a {
 
 /* --- Form Styling --- */
 .form-control, .form-select {
-    background: var(--secondary-bg);
+    background-color: var(--secondary-bg);
     border: 1px solid var(--border-color);
     color: var(--text-primary);
     border-radius: 0;
@@ -226,8 +226,15 @@ a {
     transition: var(--transition-mid);
 }
 
+.form-select {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23f2b263' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e") !important;
+    background-repeat: no-repeat !important;
+    background-position: right 1rem center !important;
+    background-size: 16px 12px !important;
+}
+
 .form-control:focus, .form-select:focus {
-    background: var(--card-bg);
+    background-color: var(--card-bg);
     border-color: var(--accent-color);
     color: var(--text-primary);
     box-shadow: none;
@@ -1861,6 +1868,15 @@ body.auth-page[data-theme="light"] .auth-wrapper::before {
     .auth-page .auth-wrapper {
         align-items: flex-start;
         padding-top: 6.5rem;
+    }
+
+    .auth-page .form-check {
+        padding-left: 1.1rem;
+        text-align: left !important;
+    }
+
+    .auth-page .form-check-input {
+        margin-left: -1.1rem;
     }
 
     .auth-page .auth-controls {
